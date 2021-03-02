@@ -16,6 +16,22 @@ var mailAutorizzate = [
 
 console.log(mailAutorizzate);
 
-mailAutorizzate.push("limone79@hotmail.it");
+var mailUtente = prompt("Scrivi la tua mail");
 
-console.log(mailAutorizzate);
+console.log(mailUtente);
+
+var controllo = false;
+
+for (var i = 0;  i < mailAutorizzate.length; i++) {
+  if (mailUtente == mailAutorizzate[i]) {
+    var controllo = true;
+  }
+};
+
+if (controllo) {
+  console.log("ACCESSO AUTORIZZATO");
+  document.getElementById('esito').innerHTML = "<div style=\"background-color: green\"><span>ACCESSO AUTORIZZATO</span></div>";
+} else {
+  console.log("ACCESSO NEGATO");
+  document.getElementById('esito').innerHTML = "<div style=\"background-color: red\"><span>ACCESSO NEGATO</span></div>";
+};

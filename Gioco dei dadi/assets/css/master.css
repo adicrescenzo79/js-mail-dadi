@@ -1,0 +1,28 @@
+body{
+  font-size: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.punteggi{
+  display: flex;
+}
+
+.utente,
+.computer{
+  width: 50vw;
+  height: 50vh;
+  border: 10px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#esito{
+  width: 100vw;
+  height: 50vh;
+  border: 10px solid black;
+}
